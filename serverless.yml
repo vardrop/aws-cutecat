@@ -1,0 +1,14 @@
+service: aws-cutecat
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  profile: cutecat
+
+functions:
+  cutecat:
+    handler: handler.cutecat
+    events:
+      - http:
+          method: get
+          path: /

@@ -1,0 +1,16 @@
+{
+  "name": "aws-cutecat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "dependencies": {
+    "got": "^9.3.2"
+  },
+  "scripts": {
+    "local": "sls invoke local -f cutecat",
+    "deploy": "npm test && sls deploy -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
